@@ -4,6 +4,10 @@ import numpy as np
 
 
 class AvgMeter(object):
+    """
+    Acc meter class, use the update to add the current acc 
+    and self.avg to get the avg acc 
+    """
     def __init__(self):
         self.val = 0
         self.avg = 0
@@ -24,6 +28,9 @@ class AvgMeter(object):
 
 
 def dice_coeff(seg, gt, ratio=0.5):
+    """
+    function to calculate the dice score
+    """
     seg = seg.flatten()
     gt = gt.flatten()
     seg[seg > ratio] = np.float32(1)
