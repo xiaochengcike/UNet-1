@@ -10,6 +10,21 @@ import numpy as np
 
 class MySet(Dataset):
     def __init__(self, data_list):
+        """
+        the dataset class receive a list that contain the data item, and each item
+        is a dict with two item include data path and label path. as follow:
+        data_list = [
+        {
+        "data":　data_path_1,
+        "label": label_path_1,
+        },
+        {
+        "data": data_path_2,
+        "label": label_path_2,
+        }
+        ...
+        ]
+        """
         self.data_list = data_list
 
     def __getitem__(self, item):
@@ -44,6 +59,18 @@ class MySet(Dataset):
 
 
 def create_list(data_path, ratio=0.8):
+    """
+    this function is create the data list and the data is set as follow:
+    --data
+        --data_1
+            image.nii
+            label.nii
+        --data_2
+            image.nii
+            label.nii
+        ...
+    if u use your own data, u can rewrite this function 
+    """
     data_list = glob.glob(os.path.join(data_path, '*'))
 
     label_name = 'label.nii'
