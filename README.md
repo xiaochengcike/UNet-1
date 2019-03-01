@@ -3,9 +3,9 @@ UNet for medical image segmentation by pytorch
 
 The 3D UNet details is as follow:
 
-----------------------------------------------------------------
+---
         Layer (type)               Output Shape         Param 
-================================================================  
+---
             Conv3d-1    [-1, 16, 112, 112, 112]             448  
        BatchNorm3d-2    [-1, 16, 112, 112, 112]              32  
               ReLU-3    [-1, 16, 112, 112, 112]               0  
@@ -65,13 +65,14 @@ The 3D UNet details is as follow:
       BatchNorm3d-57    [-1, 16, 112, 112, 112]              32  
              ReLU-58    [-1, 16, 112, 112, 112]               0  
            Conv3d-59     [-1, 1, 112, 112, 112]              17  
-================================================================  
+---  
 Total params: 2,512,481  
 Trainable params: 2,512,481  
 Non-trainable params: 0  
-----------------------------------------------------------------  
+
+---
+
 Input size (MB): 5.36  
 Forward/backward pass size (MB): 2605.66  
 Params size (MB): 9.58  
-Estimated Total Size (MB): 2620.60  
-----------------------------------------------------------------  
+Estimated Total Size (MB): 2620.60 
