@@ -3,15 +3,15 @@ class InitParser(object):
     def __init__(self):
         # gpu setting
         self.gpu_id = 0
-        self.batch_size = 1
-        self.train_ratio = 0.8
-
+        
         # optimizer setting
         self.lr = 1e-4
         self.momentum = 0.9
         self.weight_decay = 1e-4
 
         # train setting
+        self.batch_size = 1
+        self.train_ratio = 0.8
         self.num_epoch = 50
         self.init_epoch = 1
         self.is_load = False
