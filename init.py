@@ -2,7 +2,7 @@
 class InitParser(object):
     def __init__(self):
         # gpu setting
-        self.gpu_id = 2
+        self.gpu_id = 0
         self.batch_size = 1
         self.train_ratio = 0.8
 
@@ -17,7 +17,7 @@ class InitParser(object):
         self.is_load = False
 
         # path setting
-        self.output_path = "../output/h_Net/"
+        self.output_path = "../output/UNet3D/"
         self.data_path = "../data/Original"
-        self.load_path = "../output/FCN3D/Network_{}.pth.gz".format(self.init_epoch-1)
+        self.load_path = "../output/UNet3D/Network_{}.pth.gz".format(self.init_epoch-1)
 
