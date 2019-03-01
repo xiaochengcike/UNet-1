@@ -3,7 +3,6 @@ import glob
 import random
 
 from torch.utils.data import Dataset
-from scipy.ndimage import zoom
 import torch
 import nibabel as nib
 import numpy as np
@@ -25,10 +24,8 @@ class MySet(Dataset):
         mask = mask.get_fdata()
 
         data = self.normalize(data)
-        data = zoom(data, 0.5)
         data = data[np.newaxis, :, :, :]
         mask = mask.astype(np.float32)
-        mask = zoom(mask, 0.5)
         # mask = mask[np.newaxis, :, :, :]
 
         mask_tensor = torch.from_numpy(mask)
