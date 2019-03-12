@@ -1,5 +1,5 @@
 # Implementation of 3D-UNet by pytorch
-This is a 3D segmentation framework of UNet for medical volume by pytorch 
+This is a 3D segmentation framework of UNet for medical volume by pytorch   
 The network is inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) and [3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation](https://arxiv.org/pdf/1606.06650.pdf)
   
 ## How to use:  
@@ -10,7 +10,13 @@ Pytorch == 0.4.0
 Python == 3.6  
 
 **Train**  
-You can run the  
+You can run the main.py to train the network and validate.
+
+## Result
+In my task (prostate segmentation in transrectal ultrasound, the input size is 224*225*175), I achieve a dice of 0.8 and 0.2946s per volume process speed.  
+The Dice and Loss details is as follow:
+!(Loss.png)
+!(Dice.png)
 
 ## Model Detail  
 The 3D UNet details is as follow:
