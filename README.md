@@ -13,10 +13,10 @@ Python == 3.6
 You can run the main.py to train the network and validate.
 
 ## Result
-In my task (prostate segmentation in transrectal ultrasound, the input size is 224X225X175), I achieve a dice of 0.8 and 0.2946s per volume process speed.  
-The Dice and Loss details is as follow:
-![Loss](Loss.png)
-![Dice](Dice.png)
+In my task (prostate segmentation in transrectal ultrasound, the input size is 224X225X175), I achieved a dice of 0.8 and 0.2946s per volume process speed.  
+The Dice and Loss details is as follow:  
+![Loss](Loss.png)  
+![Dice](Dice.png)  
 
 ## Model Detail  
 The 3D UNet details is as follow:
