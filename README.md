@@ -1,5 +1,6 @@
 # Implementation of 3D-UNet by pytorch
-This is a 3D segmentation framework of UNet for medical volume by pytorch
+This is a 3D segmentation framework of UNet for medical volume by pytorch 
+The network is inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) and [3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation](https://arxiv.org/pdf/1606.06650.pdf)
   
 ## How to use:  
 
