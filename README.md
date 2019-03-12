@@ -1,5 +1,5 @@
-# UNet
-UNet for medical image segmentation by pytorch
+# 3D-UNet
+This is a 3D segmentation framework of UNet for medical image segmentation by pytorch
 
 The 3D UNet details is as follow:
 
