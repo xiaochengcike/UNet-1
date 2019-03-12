@@ -1,6 +1,17 @@
 # Implementation of 3D-UNet by pytorch
 This is a 3D segmentation framework of UNet for medical volume by pytorch
+  
+## How to use:  
 
+**Dependencies**  
+This work depends on the following libraries:  
+Pytorch == 0.4.0  
+Python == 3.6  
+
+**Train**  
+You can run the  
+
+## Model Detail  
 The 3D UNet details is as follow:
 
 ---
