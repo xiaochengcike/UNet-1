@@ -19,7 +19,8 @@ The Dice and Loss details is as follow:
 ![Dice](Dice.png)  
 
 ## Model Detail  
-The 3D UNet details is as follow:
+The 3D UNet details is as follow:  
+(To be easy observed, the input size is 224X224X224)
 
 ---
         Layer (type)               Output Shape         Param 
