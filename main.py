@@ -53,7 +53,9 @@ def train_epoch(net, loader, optimizer, cost):
 def main(args):
     ckpt_path = os.path.join(args.output_path, "Checkpoint")
     log_path = os.path.join(args.output_path, "Log")
-
+    
+    # this is just for my path, remember to change if you use your own dir
+    check_dir("../output/")
     check_dir(args.output_path)
     check_dir(log_path)
     check_dir(ckpt_path)
